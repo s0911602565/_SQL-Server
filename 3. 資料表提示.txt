@@ -1,0 +1,4 @@
+資料表提示 = with(index(name_index))
+
+
+SELECT  * FROM stringboots with(index(name_index))  where name = 'john3' and address ='address3'

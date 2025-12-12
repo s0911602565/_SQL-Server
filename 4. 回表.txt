@@ -1,0 +1,7 @@
+select * from tbName where name ='' and address = ''
+
+
+name 是 非叢集索引
+address 是 heap 堆積
+
+利用name的index查詢 ,查詢完再過濾address 就叫做回表
