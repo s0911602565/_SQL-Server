@@ -4,4 +4,4 @@ create noclustered index my_name on TBName(name) include(email)
 
 include 用途是給select ,不是給where使用的!
 
-select email , name from TBName where name = 'john';
+select email , name from TBName where name = 'john' ;
