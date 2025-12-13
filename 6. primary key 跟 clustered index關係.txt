@@ -1,0 +1,17 @@
+1. Primary Key 特性:值唯一、通常用來建立關聯
+
+2. Clustered Index 特性:影響資料順序 
+
+
+
+CREATE TABLE Users (
+    UserId INT PRIMARY KEY NONCLUSTERED,	//讓ID成為非叢集
+    UserName NVARCHAR(50)
+);
+
+
+CREATE CLUSTERED INDEX idx_UserName ON Users(UserName);	//讓name成為叢集
+
+
+
+建立Primary Key時 ，系統會自動建立 Clustered Index

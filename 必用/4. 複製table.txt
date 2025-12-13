@@ -1,0 +1,1 @@
+select * into tbse.aa_myEmp from tbse.AA_AccCode

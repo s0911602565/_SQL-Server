@@ -1,0 +1,9 @@
+叢集索引
+create clustered index my_id on TBName(id)
+
+
+
+非叢集索引
+create noclustered index my_name on TBName(name) include(email)    --include功能: 可以在select 輸出email ，避免使用where而回表
+
+select email , name from TBName where name = 'john' ;      
