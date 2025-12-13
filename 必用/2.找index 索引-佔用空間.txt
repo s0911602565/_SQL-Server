@@ -1,2 +1,2 @@
  exec sp_spaceused   		-- 資料庫大小
- exec sp_spaceused  tableName	-- 表的index佔用空間
+ exec sp_spaceused  'tableName'	-- 表的index佔用空間

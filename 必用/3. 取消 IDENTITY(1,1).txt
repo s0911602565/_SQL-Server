@@ -1,1 +1,2 @@
-SET IDENTITY_INSERT dbo.emp4 OFF;
+SET IDENTITY_INSERT dbo.emp ON;   移除限制 強制新增
+SET IDENTITY_INSERT dbo.emp OFF;

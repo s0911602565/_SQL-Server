@@ -1,1 +1,0 @@
-create clustered index my_id on  TBName(id)
