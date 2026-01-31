@@ -90,3 +90,4 @@ EXCEPT
 select * from b00 where accname = '應收營業稅';
 */
 
+-- 使用 >= <= 跟between
