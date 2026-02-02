@@ -1,0 +1,12 @@
+
+DECLARE @sql NVARCHAR(MAX) = N'';
+
+    SELECT @sql += 
+    'SELECT   ''     '
+    + t.name 
+    + ''' AS TableName, COUNT(1) AS count FROM tbse.' 
+    +  QUOTENAME(t.name)  
+    + ';' + CHAR(10)
+FROM sys.tables t;
+-- PRINT @sql;
+ EXEC sp_executesql @sql;
