@@ -1,0 +1,18 @@
+CHAR(10)
+
+使用時機是 
+DECLARE @sql NVARCHAR(MAX) = '123';
+
+
+
+select @sql + CHAR(10) from abc  
+
+
+-- 要用在迴圈!
+
+123
+123
+123
+
+
+ CHAR(13) 是回表(看不懂)
