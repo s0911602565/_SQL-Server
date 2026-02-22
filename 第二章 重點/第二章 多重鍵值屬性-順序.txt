@@ -1,5 +1,5 @@
 多重鍵值屬性-順序
-create nonCLUSTERED index ucindex on c01( 不重複 , 重複)
+create nonCLUSTERED index ucindex on c01( 不重複優先 , 重複)
 
 選擇性（Selectivity）高的欄位放前面
 

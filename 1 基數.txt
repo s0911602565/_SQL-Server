@@ -1,0 +1,7 @@
+distinct = 基數
+
+select  count(distinct id) from c01;
+
+男女 ->  基數 = 2		∴大量重複
+
+身分證 -> 基數 = 總列數		∴沒有重複,相當於主鍵
