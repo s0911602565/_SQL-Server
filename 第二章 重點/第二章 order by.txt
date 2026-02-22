@@ -1,0 +1,17 @@
+if OBJECT_ID('c01' , 'table') is not null drop table c01;
+
+select * into c01 from tbse.AE_EngVersion ; 
+
+
+create    CLUSTERED index ucindex on c01( id asc );
+
+
+-- 效能一樣
+select top 20000 * from c01 order by id desc;
+select top 20000 * from c01 order by id asc;
+
+
+-- 沒有索引 使用order by 
+select top 20000 * from c01 with(index(ucindex)) order by id desc;     -- 8%
+select top 20000 * from c01 with(index(ucindex)) order by version asc; -- 91% 
+ 
