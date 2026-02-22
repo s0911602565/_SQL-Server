@@ -1,0 +1,7 @@
+多重鍵值屬性-順序
+create nonCLUSTERED index ucindex on c01( 不重複 , 重複)
+
+選擇性（Selectivity）高的欄位放前面
+
+選擇性高 = 不重複的值多（例如：ID、GUID、唯一日期時間）
+選擇性低 = 重複的值多（例如：性別、狀態、月份、YES/NO）
