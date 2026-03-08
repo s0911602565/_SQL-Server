@@ -1,0 +1,19 @@
+1. Primary Key 		主鍵                  特性:值唯一、通常用來建立關聯，一張表只能有一個，建立Primary Key時 ，系統會預設建立 Clustered Index。 ex: Id INT PRIMARY KEY CLUSTERED
+
+
+2. Clustered Index  	排序                  特性:影響資料順序 ，一張表只能有一個
+
+
+
+--延續1.
+create table Users (
+    id int PRIMARY KEY NONCLUSTERED,	//id=非叢集
+    name NVARCHAR(50)
+);
+
+
+--延續1.
+CREATE CLUSTERED INDEX idx_UserName ON Users(UserName);	//name=叢集
+
+
+

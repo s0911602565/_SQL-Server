@@ -4,4 +4,8 @@
 select '    ''    '   => '
 
 
-進階
+select '''123''' from tbse.AA_AccCode
+
+輸出 '123'
+
+
