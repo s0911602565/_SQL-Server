@@ -1,9 +1,11 @@
 叢集索引
-create clustered index my_id on TBName(id)
+create clustered index my_id on tableName(id)
 
 
 
 非叢集索引
-create noclustered index my_name on TBName(name) include(email)    --include功能: 可以在select 輸出email ，避免使用where而回表
-
+--include select有效
+--include where 無效
+create noclustered index my_name on tableName(name) include(email) 
+   
 select email , name from TBName where name = 'john' ;      

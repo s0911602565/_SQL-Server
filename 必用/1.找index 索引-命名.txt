@@ -1,1 +1,4 @@
-exec sp_helpindex tableName
+exec sp_helpindex  'tbse.AA_AccCode'	-- 找索引(id)、非叢集(name、sex)
+
+exec sp_spaceused 'tbse.AA_AccCode'   	-- 查table表大小
+ 
